@@ -30,7 +30,6 @@ cat << EOF > $default_folder/$name/$name.html
 EOF
 
 cat << EOF > $default_folder/$name/$name.styl
-// Import this to get access to palette and variables
 @import '../../styles/base'
 EOF
 
