@@ -1,0 +1,3 @@
+Polymer('archived-page', {
+
+});
