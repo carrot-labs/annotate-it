@@ -77,7 +77,7 @@ gulp.task('stylus', function() {
 
 gulp.task('jshint', function() {
   return gulp
-    .src('app/**/*.js')
+    .src('app/elements/**/*.js')
     .pipe(plumber())
     .pipe(jshint())
     .pipe(jshint.reporter(stylish));
@@ -89,8 +89,8 @@ gulp.task('jshint', function() {
  * Watches for javascript changes and lints them
  */
 
-gulp.task('jshint-watch', function() {
-  gulp.watch('app/**/*.js', ['jshint']);
+gulp.task('jshint-watch', ['jshint'], function() {
+  gulp.watch('app/elements/**/*.js', ['jshint']);
 });
 
 /**
