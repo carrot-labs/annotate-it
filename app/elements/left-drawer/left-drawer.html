@@ -1,0 +1,22 @@
+<link rel="import" href="../../components/polymer/polymer.html">
+
+<polymer-element name="left-drawer">
+  <template>
+    <link rel="stylesheet" href="left-drawer.css">
+    
+    <core-header-panel fit>
+      <core-toolbar>Menu</core-toolbar>
+
+      <core-menu on-core-select="{{closeDrawer}}">
+        <template repeat="{{link in links}}">
+          <paper-item noink on-click="{{navigate}}">
+            <core-icon icon="label-outline"></core-icon>
+            {{link.name}}
+          </paper-item>
+        </template>
+      </core-menu>
+    </core-header-panel>
+  </template>
+  
+  <script src="left-drawer.js"></script>
+</polymer-element>
