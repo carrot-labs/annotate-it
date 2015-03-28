@@ -1,0 +1,38 @@
+{
+  "name": "note-it",
+  "version": "0.0.1",
+  "description": "A Node.js & Polymer notes application",
+  "main": "gulpfile.js",
+  "private": true,
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grvcoelho/note-it.git"
+  },
+  "keywords": [
+    "polymer",
+    "webcomponents",
+    "application",
+    "webapp"
+  ],
+  "author": "Guilherme Rv Coelho <guilherme@cenoura.co>",
+  "license": "MIT",
+  "homepage": "https://github.com/grvcoelho/note-it",
+  "devDependencies": {
+    "browser-sync": "^2.4.0",
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.9.4",
+    "gulp-plumber": "^1.0.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sourcemaps": "^1.5.1",
+    "gulp-stylus": "^2.0.1",
+    "gulp-vulcanize": "^5.0.0",
+    "gulp-watch": "^4.2.1",
+    "jeet": "^6.1.2",
+    "jshint-stylish": "^1.0.1",
+    "kouto-swiss": "^0.11.10",
+    "rupture": "^0.6.1"
+  }
+}
