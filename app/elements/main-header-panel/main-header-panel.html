@@ -1,0 +1,31 @@
+<link rel="import" href="../../components/polymer/polymer.html">
+
+<polymer-element name="main-header-panel">
+  <template>
+    <link rel="stylesheet" href="main-header-panel.css">
+    
+    <core-header-panel fit>
+      <core-toolbar>
+        <content select="[core-drawer-toggle]"></content>
+        <div>Note It</div>
+        <span flex></span>
+
+        <paper-menu-button>
+          <paper-icon-button icon="more-vert"></paper-icon-button>
+
+          <paper-dropdown class="dropdown" halign="right">
+            <core-menu>
+              <paper-item>Settings</paper-item>
+              <paper-item>Feedback</paper-item>
+              <paper-item>About</paper-item>
+            </core-menu>
+          </paper-dropdown>
+        </paper-menu-button>
+      </core-toolbar>
+
+      <content></content>
+    </core-header-panel>  
+  </template>
+  
+  <script src="main-header-panel.js"></script>
+</polymer-element>

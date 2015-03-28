@@ -1,0 +1,3 @@
+Polymer('main-header-panel', {
+
+});
